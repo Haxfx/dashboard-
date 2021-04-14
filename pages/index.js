@@ -1,65 +1,75 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from "next/link";
+import fetch from "isomorphic-unfetch";
+import { motion } from "framer-motion";
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+// Our custom easing
+let easing = [0.6, -0.05, 0.01, 0.99];
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+// animate: defines animation
+// initial: defines initial state of animation or stating point.
+// exit: defines animation when component exits
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+// Custom variant
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+    transition: { duration: 0.6, ease: easing },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+const Index = (props) => (
+  <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-2">
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        className="title"
+      >
+        <div className="grid grid-rows-5 w-full items-center">
+          <div className="flex w-2/3 justify-self-center">
+            <h1 className="mt-10 text-2xl">Stakeboard</h1>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </motion.div>
+      <motion.div variants={fadeInUp} className="cards">
+        <div className="card-container grid grid-cols-9 grid-rows-20 gap-10 mr-10">
+          <div className="col-start-1 lg:col-end-4 col-end-10 row-start-1 row-end-7 p-10 lg:rounded-t-none rounded-3xl bg-purple-dark">
+            <span className="text-xl">Related Videos</span>
+          </div>
+          <div className="col-start-4 lg:col-end-7 col-end-10 row-start-1 row-end-2 p-10 lg:rounded-t-none rounded-3xl bg-purple-dark">
+            <span className="text-xl">Popular Stakers</span>
+          </div>
+          <div className="col-start-7 lg:col-end-10 col-end-10 row-start-1 row-end-5 p-10  lg:rounded-t-none rounded-3xl bg-purple-dark">
+            <span className="text-xl">Related Videos</span>
+          </div>
+          <span className="col-span-2 category">Dashboard menu</span>
+        </div>
+      </motion.div>
     </div>
-  )
-}
+  </motion.div>
+);
+
+//Index.getInitialProps = async function () {
+//  return {
+//    product: "Data",
+//  };
+//};
+
+export default Index;
