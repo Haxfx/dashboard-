@@ -78,7 +78,9 @@ module.exports = {
         13: "13",
       },
       width: {
+        smallMedium: "50%",
         medium: "65%",
+        large: "80%",
       },
     },
   },
