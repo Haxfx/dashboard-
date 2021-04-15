@@ -8,7 +8,7 @@ class Dashboard extends App {
   render() {
     const { Component, pageProps, router } = this.props;
     return (
-      <div className="bg-purple-background font-Poppins text-white h-screen">
+      <div className="font-Poppins text-white">
         <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>

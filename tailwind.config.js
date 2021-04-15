@@ -50,7 +50,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         // Simple 2 column grid
-        2: "1fr 5fr",
+        2: "1fr 4fr",
 
         // Complex site-specific column configuration
         footer: "200px minmax(900px, 1fr) 100px",
@@ -58,6 +58,27 @@ module.exports = {
       gridTemplateRows: {
         // Simple 5 row grid
         5: "1fr 6fr",
+        8: "repeat(8, 1fr)",
+        9: "repeat(9, minmax(0, 1fr))",
+        10: "repeat(10, minmax(0, 1fr))",
+        20: "repeat(20, minmax(0, 0.5fr))",
+      },
+      gridRow: {
+        7: "span 7 / span 7",
+        8: "span 8 / span 8",
+        9: "span 9 / span 9",
+        10: "span 10 / span 10",
+      },
+      gridRowEnd: {
+        8: "8",
+        9: "9",
+        10: "10",
+        11: "11",
+        12: "12",
+        13: "13",
+      },
+      width: {
+        medium: "65%",
       },
     },
   },
