@@ -3,7 +3,7 @@ import React from "react";
 export const MenuItem = ({ iconComponent, title, active }) => {
   const IconComponent = iconComponent;
   return (
-    <div className="menu-items mt-10">
+    <div className="menu-items mt-10 cursor-pointer hover:bg-purple-medium rounded-xl">
       <div className="flex flex-row justify-start align-center">
         <div
           className={`flex w-10 h-10 ${
