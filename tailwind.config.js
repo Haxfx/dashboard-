@@ -7,7 +7,11 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: ["./components/**/*.js", "./components/**/**/*.js"],
+    content: [
+      "./components/**/*.js",
+      "./components/**/**/*.js",
+      "./pages/*.js",
+    ],
   },
   variants: {
     extend: {
