@@ -6,8 +6,9 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: {
-    enabled: true,
+    enabled: false,
     content: [
+      // Uncomment when pushing to production
       "./components/**/*.js",
       "./components/**/**/*.js",
       "./pages/*.js",
@@ -69,11 +70,22 @@ module.exports = {
         10: "repeat(10, minmax(0, 1fr))",
         20: "repeat(20, minmax(0, 0.5fr))",
       },
+      gridColumn: {
+        "span-9-1": "span 1 / span 9",
+        "span-9-2": "span 2 / span 9",
+        "span-9-3": "span 3 / span 9",
+        "span-9-4": "span 4 / span 9",
+        "span-9-5": "span 5 / span 9",
+        "span-9-6": "span 6 / span 9",
+        "span-9-7": "span 7 / span 9",
+        "span-9-8": "span 8 / span 9",
+        "span-9-9": "span 9 / span 9",
+      },
       gridRow: {
-        7: "span 7 / span 7",
-        8: "span 8 / span 8",
-        9: "span 9 / span 9",
-        10: "span 10 / span 10",
+        "span-7": "span 7 / span 7",
+        "span-8": "span 8 / span 8",
+        "span-9": "span 9 / span 9",
+        "span-10": "span 10 / span 10",
       },
       gridRowEnd: {
         8: "8",

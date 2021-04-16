@@ -35,7 +35,7 @@ export const Cards = () => {
       <Card rows="3" inline>
         <Tutorial />
       </Card>
-      <Card rows="6" />
+      <Card rows="9" />
       <Card rows="4" cols="4">
         <Basic
           title="Prepare for your first stakeboard"
@@ -47,7 +47,7 @@ export const Cards = () => {
           uploadDate="2 days ago"
         />
       </Card>
-      <Card title="Popular Searches" rows="5" cols="2" />
+      <Card title="Popular Searches" rows="8" cols="2" />
       <Card rows="4" cols="4">
         <Basic
           title="We have a surprise for you"
