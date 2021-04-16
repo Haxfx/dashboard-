@@ -1,5 +1,3 @@
-import Link from "next/link";
-import fetch from "isomorphic-unfetch";
 import { motion } from "framer-motion";
 
 import { Cards } from "../components/Cards/Cards";
