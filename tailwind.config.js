@@ -38,6 +38,7 @@ module.exports = {
           primary: "#6c5ecf",
           dark: "#252836",
           background: "#1f1d2b",
+          backgroundLight: "#2d303e",
         },
         gray: {
           base: "#616161",
@@ -81,6 +82,18 @@ module.exports = {
         smallMedium: "50%",
         medium: "65%",
         large: "80%",
+      },
+      height: {
+        smallMedium: "50%",
+        medium: "65%",
+        large: "80%",
+      },
+      fontSize: {
+        xxs: ".60rem",
+        xxxs: ".50rem",
+      },
+      maxHeight: {
+        104: "30rem",
       },
     },
   },

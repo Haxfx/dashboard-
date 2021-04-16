@@ -7,7 +7,7 @@ export const Stakers = () => {
     <div className="flex justify-around">
       <Portrait userImg="agnes" user="agnes" />
       <Portrait userImg="catherine" user="catherine" />
-      <Portrait userImg="madre" user="madre" />
+      {/*<Portrait userImg="madre" user="madre" />*/}
       <Portrait userImg="rembrand" user="rembrand" />
       <Portrait userImg="sotheby" user="sotheby" />
     </div>

@@ -38,20 +38,22 @@ const stagger = {
 };
 
 const Index = (props) => (
-  <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-2">
-      <motion.div
-        animate={{ opacity: 1 }}
-        initial={{ opacity: 0 }}
-        className="title"
-      >
-        <Menu />
-      </motion.div>
-      <motion.div variants={fadeInUp} className="cards">
-        <Cards />
-      </motion.div>
-    </div>
-  </motion.div>
+  <div className="max-w-screen-2xl m-auto">
+    <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-2">
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          className="title"
+        >
+          <Menu />
+        </motion.div>
+        <motion.div variants={fadeInUp} className="cards">
+          <Cards />
+        </motion.div>
+      </div>
+    </motion.div>
+  </div>
 );
 
 //Index.getInitialProps = async function () {

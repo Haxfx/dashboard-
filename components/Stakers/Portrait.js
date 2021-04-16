@@ -4,7 +4,7 @@ import { CheckIcon } from "@heroicons/react/solid";
 
 export const Portrait = ({ user, userImg }) => {
   return (
-    <div className="grid rows-auto justify-center items-center">
+    <div className="group grid rows-auto justify-center items-center cursor-pointer">
       <div className="inline-block relative border-solid bg-gradient-to-tl from-purple-light to-blue-400 rounded-full p-1">
         <img
           src={`/portraits/${userImg}.png`}
@@ -14,7 +14,7 @@ export const Portrait = ({ user, userImg }) => {
           <CheckIcon className="h-3 w-3" />
         </div>
       </div>
-      <span className="text-xs mt-3 capitalize text-purple-light justify-self-center self-center">
+      <span className="text-xs mt-3 capitalize text-purple-light justify-self-center self-center group-hover:text-white">
         {user}
       </span>
     </div>

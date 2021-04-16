@@ -6,6 +6,17 @@ body {
   background-color: #1f1d2b;
 }
 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(45, 48, 62);
+  -webkit-box-shadow: 0 0 1px rgba(45, 48, 62, 0.5);
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
