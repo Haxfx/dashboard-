@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-import { Cards } from "../components/Main/Index";
-import { Menu } from "../components/Menu/Menu";
+import { Cards } from "../../components/Main/Article";
+import { Menu } from "../../components/Menu/Menu";
 
 // Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99];

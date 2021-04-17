@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card } from "./Card";
+import { Card } from "../Cards/Card";
 import { Settings } from "../Settings/Settings";
 import { Stakers } from "../Stakers/Stakers";
 import { Videos } from "../Videos/Videos";
