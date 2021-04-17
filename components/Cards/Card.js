@@ -14,11 +14,11 @@ export const Card = ({
 }) => {
   return (
     <div
-      className={`col-span-9-${cols ? cols : "3"} row-span-${
+      className={`lg:col-span-9-${cols ? cols : "3"} lg:row-span-${
         rows ? rows : "3"
       } ${!inline && `p-6 py-6`} ${
         variant === "top" && ` lg:rounded-t-none`
-      }  rounded-3xl bg-purple-dark`}
+      } lg:mx-0 mx-5 rounded-3xl col-span-9-9 bg-purple-dark`}
     >
       {title && (
         <p

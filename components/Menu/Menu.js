@@ -17,7 +17,7 @@ export const Menu = () => {
   const [nightMode, setNightMode] = useState(true);
 
   return (
-    <div className="grid auto-rows-auto grid-flow-row row-auto gap-10 w-full items-center">
+    <div className="lg:grid hidden auto-rows-auto grid-flow-row row-auto gap-10 w-full items-center ">
       <div className="flex w-2/3 justify-self-center">
         <h1 className="mt-10 text-2xl">Stakeboard</h1>
       </div>
@@ -63,7 +63,7 @@ export const Menu = () => {
         </form>
       </div>
       <div className="socials grid grid-rows-auto gap-10">
-        <div className="flex w-2/3 self-center cursor-pointer justify-self-center items-center justify-center h-10 bg-purple-medium mr-5 ml-5 rounded-xl">
+        <div className="flex w-2/3 self-center cursor-pointer justify-self-center items-center justify-center h-14 bg-purple-medium mr-5 ml-5 rounded-xl">
           <svg
             width="20"
             height="20"
@@ -74,7 +74,7 @@ export const Menu = () => {
           </svg>
           <span className="ml-4">Follow</span>
         </div>
-        <div className="flex w-2/3 cursor-pointer self-center justify-self-center items-center justify-center h-10 bg-red-primary mr-5 ml-5 rounded-xl">
+        <div className="flex w-2/3 cursor-pointer self-center justify-self-center items-center justify-center h-14 bg-red-primary mr-5 ml-5 rounded-xl">
           <ShareIcon className="h-5 w-5 text-white" />
           <span className="ml-4">Share</span>
         </div>
