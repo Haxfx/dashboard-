@@ -9,6 +9,7 @@ import { Notifications } from "../Notifications/Notifications";
 import { Basic } from "../Basic/Basic";
 import { Chat } from "../Chat/Chat";
 import { Projects } from "../Projects/Projects";
+import { Socials } from "../Socials/Socials";
 
 export const Cards = () => {
   return (
@@ -54,11 +55,11 @@ export const Cards = () => {
           userActive
         />
       </Card>
-      <Card title="Popular Projects" rows="4" cols="2">
+      <Card title="Popular Projects" rows="4" cols="2" variant="bottom">
         <Projects />
       </Card>
-      <Card rows="4" title="Chart" />
-      <Card rows="2" cols="4">
+      <Card rows="4" title="Chart" variant="bottom" />
+      {/*<Card rows="2" cols="4">
         <Basic
           title="Prepare for your first stakeboard"
           thumbnail="vulcano"
@@ -68,6 +69,9 @@ export const Cards = () => {
           likes={46.238}
           uploadDate="2 days ago"
         />
+      </Card>*/}
+      <Card title="Socials" rows="2" cols="4" variant="bottom">
+        <Socials />
       </Card>
     </div>
   );
