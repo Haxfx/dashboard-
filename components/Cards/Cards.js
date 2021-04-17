@@ -8,6 +8,7 @@ import { Tutorial } from "../Tutorial/Tutorial";
 import { Notifications } from "../Notifications/Notifications";
 import { Basic } from "../Basic/Basic";
 import { Chat } from "../Chat/Chat";
+import { Projects } from "../Projects/Projects";
 
 export const Cards = () => {
   return (
@@ -53,7 +54,9 @@ export const Cards = () => {
           userActive
         />
       </Card>
-      <Card title="Popular Searches" rows="6" cols="2" />
+      <Card title="Popular Projects" rows="6" cols="2">
+        <Projects />
+      </Card>
       <Card rows="6" title="Chart" />
       <Card rows="2" cols="4">
         <Basic
