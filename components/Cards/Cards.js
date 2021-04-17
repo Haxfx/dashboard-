@@ -35,7 +35,12 @@ export const Cards = () => {
       <Card rows="3" inline>
         <Tutorial />
       </Card>
-      <Card rows="4" />
+      <Card rows="1" title="ADA Price">
+        <div className="flex justify-center flex-col items-center">
+          <h1 className="mt-3 text-3xl">$ 1.39</h1>
+          <span className="mt-1">Global Average</span>
+        </div>
+      </Card>
       <Card rows="4" cols="4">
         <Basic
           title="We have a surprise for you"
@@ -48,9 +53,9 @@ export const Cards = () => {
           userActive
         />
       </Card>
-      <Card title="Popular Searches" rows="8" cols="2" />
-      <Card rows="5" />
-      <Card rows="4" cols="4">
+      <Card title="Popular Searches" rows="6" cols="2" />
+      <Card rows="6" title="Chart" />
+      <Card rows="2" cols="4">
         <Basic
           title="Prepare for your first stakeboard"
           thumbnail="vulcano"

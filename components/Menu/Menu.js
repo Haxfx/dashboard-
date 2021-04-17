@@ -42,7 +42,7 @@ export const Menu = () => {
           </span>
         </p>
         <MenuItem iconComponent={HomeIcon} title="Live Stream" />
-        <MenuItem iconComponent={LibraryIcon} title="Tutorial" />
+        <MenuItem iconComponent={LibraryIcon} title="Education" />
         <MenuItem iconComponent={FireIcon} title="Competition" />
         <MenuItem iconComponent={AnnotationIcon} title="Community" />
       </div>
