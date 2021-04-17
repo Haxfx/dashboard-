@@ -1,6 +1,11 @@
 import React from "react";
 
-import { HeartIcon, CheckIcon, EyeIcon } from "@heroicons/react/solid";
+import {
+  HeartIcon,
+  CheckIcon,
+  EyeIcon,
+  CubeTransparentIcon,
+} from "@heroicons/react/solid";
 
 export const Basic = ({
   title,
@@ -58,7 +63,10 @@ export const Basic = ({
           </div>
         </div>
       </div>
-      <HeartIcon className="w-6 h-6 rounded-full bg-purple-light hover:bg-red-400 ml-2 p-1 absolute right-0 cursor-pointer" />
+      <div className="absolute right-0 bottom-2 text-xs text-purple-light">
+        <span>Sponsored</span>
+      </div>
+      <CubeTransparentIcon className="w-6 h-6 rounded-full hover:bg-purple-light bg-purple-primary ml-2 p-1 absolute right-0 cursor-pointer" />
     </div>
   );
 };

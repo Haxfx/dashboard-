@@ -1,42 +1,25 @@
 import React from "react";
+import { Video } from "./Video";
 
 export const Videos = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-row justify-between">
-        <img
-          src="/stage/vulcano.jpeg"
-          alt="building"
-          className="rounded-2xl w-32 h-24"
-        />
-        <div className="flex content-around justify-around flex-col ml-3">
-          <span className="text-sm justify-self-start self-start">
-            Prepare for your first stakeboard
-          </span>
-          <span className="text-xs text-purple-light">Bassie Meekie</span>
-          <span className="text-xs text-purple-light">
-            125,908 views - 2 days ago
-          </span>
-        </div>
-      </div>
-      <div className="flex flex-row justify-between mt-6">
-        <img
-          src="/stage/coast.jpeg"
-          alt="building"
-          className="rounded-2xl w-32 h-24"
-        />
-        <div className="flex content-around justify-around flex-col ml-3">
-          <span className="text-sm justify-self-start self-start">
-            Tips of playing stakeboard on a ramp
-          </span>
-          <span className="text-xs text-purple-light">Bassie Meekie</span>
-          <span className="text-xs text-purple-light">
-            125,908 views - 2 days ago
-          </span>
-        </div>
-      </div>
-      <span className="flex content-center justify-center rounded-2xl cursor-pointer hover:bg-opacity-70 mt-6 py-3 text-sm bg-purple-primary">
-        See All related videos (32)
+      <Video
+        img="vulcano"
+        title="Prepare for your first stakeboard"
+        author="Bassie Meekie"
+        views="125,908"
+        uploaded="2 days ago"
+      />
+      <Video
+        img="coast"
+        title="Tips of playing stakeboard on a ramp"
+        author="Bassie Meekie"
+        views="125,908"
+        uploaded="2 days ago"
+      />
+      <span className="flex content-center justify-center rounded-2xl cursor-pointer hover:bg-opacity-70 py-3 text-sm bg-purple-primary">
+        See All related videos (106)
       </span>
     </div>
   );

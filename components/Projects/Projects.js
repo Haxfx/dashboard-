@@ -41,7 +41,7 @@ export const Projects = () => {
         </div>
       </div>
       <span className="flex content-center justify-center rounded-2xl cursor-pointer hover:bg-purple-primary mt-6 py-3 text-sm border-2 border-purple-primary">
-        See More Projects (32)
+        See More Projects (87)
       </span>
     </>
   );

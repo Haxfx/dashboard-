@@ -110,6 +110,7 @@ module.exports = {
         xxxs: ".50rem",
       },
       maxHeight: {
+        100: "28rem",
         104: "30rem",
       },
     },

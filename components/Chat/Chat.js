@@ -63,7 +63,7 @@ const messagesFixture = [
 export const Chat = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col-reverse h-large max-h-104 block overflow-y-scroll pr-3">
+      <div className="flex flex-col-reverse h-large max-h-100 block overflow-y-scroll pr-3">
         {messagesFixture.map((message) => (
           <Message
             key={message.id}

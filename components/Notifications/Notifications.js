@@ -1,6 +1,8 @@
 import React from "react";
+import { Truncate } from "../../util/Truncate";
 
 import { ChatAltIcon, DotsHorizontalIcon } from "@heroicons/react/solid";
+import { Video } from "../Videos/Video";
 
 export const Notifications = () => {
   return (
@@ -17,12 +19,14 @@ export const Notifications = () => {
             </div>
           </div>
         </div>
-        <div className="flex content-around justify-around flex-col ml-3">
+        <div className="flex content-around justify-around flex-col ml-3 cursor-pointer">
           <span className="text-sm justify-self-start self-start">
-            Madre
-            <span className="font-light ml-1">
-              left some comments on how to ride your stakeboard safely
-            </span>
+            <Truncate lineCount={2} moreText={``} lessText={``}>
+              Madre{" "}
+              <span className="font-light">
+                left some comments on how to ride your stakeboard safely
+              </span>
+            </Truncate>
           </span>
           <span className="text-xs text-purple-light">
             This is really amazing, I really enjoy watching this
