@@ -38,7 +38,7 @@ const stagger = {
 const Index = (props) => (
   <div className="max-w-screen-2xl m-auto">
     <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}

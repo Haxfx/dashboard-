@@ -14,16 +14,22 @@ import { Socials } from "../Socials/Socials";
 export const Cards = () => {
   return (
     <div className="card-container grid grid-cols-9 gap-8">
-      <Card title="Related Videos" variant="top" rows="3">
+      <Card title="Related Videos" variant="first" rows="3">
         <Videos />
       </Card>
       <Card title="Popular Stakers" variant="top" rows="2">
         <Stakers />
       </Card>
-      <Card variant="top" inline rows="3">
+      <Card variant="top" inline rows="3" noMobile>
         <Settings />
       </Card>
-      <Card title="Live Chat" subTitle="15,986 people" seperator rows="4">
+      <Card
+        title="Live Chat"
+        subTitle="15,986 people"
+        seperator
+        rows="4"
+        noMobile
+      >
         <Chat />
       </Card>
       <Card
@@ -70,7 +76,7 @@ export const Cards = () => {
           uploadDate="2 days ago"
         />
       </Card>*/}
-      <Card title="Socials" rows="2" cols="4" variant="bottom">
+      <Card title="Socials" rows="2" cols="4" variant="last">
         <Socials />
       </Card>
     </div>
