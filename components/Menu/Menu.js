@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Switch } from "@headlessui/react";
 import {
   HomeIcon,
   ChevronDoubleRightIcon,
@@ -14,7 +15,7 @@ import {
 import { MenuItem } from "./MenuItem";
 
 export const Menu = () => {
-  const [nightMode, setNightMode] = useState(true);
+  const [enabled, setEnabled] = useState(false);
 
   return (
     <div className="lg:grid hidden auto-rows-auto grid-flow-row row-auto gap-10 w-full items-center ">
@@ -46,22 +47,24 @@ export const Menu = () => {
         <MenuItem iconComponent={FireIcon} title="Competition" />
         <MenuItem iconComponent={AnnotationIcon} title="Community" />
       </div>
-      <div className="flex items-center justify-center justify-self-center pb-10 border-b-2 border-purple-medium w-medium">
-        <form className="flex items-center">
-          <label className="switch">
-            <input
-              type="checkbox"
-              checked={nightMode}
-              onChange={(e) => {
-                e.preventDefault;
-                setNightMode();
-              }}
+      <Switch.Group>
+        <div className="flex items-center justify-center justify-self-center pb-10 border-b-2 border-purple-medium w-medium">
+          <Switch
+            checked={enabled}
+            onChange={setEnabled}
+            className={`${
+              enabled ? "bg-purple-primary" : "bg-purple-medium"
+            } relative inline-flex items-center h-9 rounded-full w-16 transition-colors focus:outline-none`}
+          >
+            <span
+              className={`${
+                enabled ? "translate-x-7" : "translate-x-1"
+              } inline-block w-7 h-7 transform bg-white rounded-full transition duration-300 transition-transform mx-1`}
             />
-            <span className="slider round"></span>
-          </label>
-          <span className="ml-5">Night Mode</span>
-        </form>
-      </div>
+          </Switch>
+          <Switch.Label className="ml-4">Night Mode</Switch.Label>
+        </div>
+      </Switch.Group>
       <div className="socials grid grid-rows-auto gap-10">
         <div className="flex w-2/3 self-center cursor-pointer justify-self-center items-center justify-center h-14 bg-purple-medium mr-5 ml-5 rounded-xl">
           <svg
