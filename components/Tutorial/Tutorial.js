@@ -31,7 +31,7 @@ export const Tutorial = () => {
       <span className="px-6 pt-4 text-white text-m cursor-pointer">
         Basic how to setup your stakeboard comfortly and Basic Equipment
       </span>
-      <div className="flex flex-row px-6 pt-6 justify-start content-start text-purple-light">
+      <div className="flex flex-row p-6 justify-start content-start text-purple-light">
         <div className="flex flex-row">
           <EyeIcon className="h-4 w-4 hover:text-white cursor-pointer" />
           <span className="text-xs ml-2">125,908 views</span>

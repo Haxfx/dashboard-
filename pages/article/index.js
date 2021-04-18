@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { Cards } from "../../components/Main/Article";
+import { Cards } from "../../components/Pages/Article";
 import { Menu } from "../../components/Menu/Menu";
 
 // Our custom easing

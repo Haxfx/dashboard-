@@ -51,7 +51,7 @@ export const Cards = () => {
       <Card title="Popular Projects" rows="3" cols="2">
         <Projects />
       </Card>
-      <Card rows="2" cols="4">
+      <Card rows="2" cols="4" inline>
         <Basic
           title="We have a surprise for you"
           thumbnail="lelie"
