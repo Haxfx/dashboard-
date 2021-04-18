@@ -9,7 +9,7 @@ export const Tutorial = () => {
         <img
           src="/stage/flowers.jpg"
           alt="Flowers"
-          className="rounded-t-2xl border-b-none"
+          className="rounded-t-2xl border-b-none h-56"
         />
         <HeartIcon className="w-6 h-6 rounded-full bg-red-primary ml-2 p-1 absolute right-3 top-3 cursor-pointer hover:bg-purple-light" />
         <div className="grid rows-auto justify-center items-center absolute right-5 bottom-0">
@@ -28,10 +28,10 @@ export const Tutorial = () => {
           <button className="w-2 h-2 rounded-full bg-red-400 ml-2" />
         </span>
       </div>
-      <span className="p-6 text-white text-m cursor-pointer">
+      <span className="px-6 pt-4 text-white text-m cursor-pointer">
         Basic how to setup your stakeboard comfortly and Basic Equipment
       </span>
-      <div className="flex flex-row p-6 justify-start content-start text-purple-light">
+      <div className="flex flex-row px-6 pt-6 justify-start content-start text-purple-light">
         <div className="flex flex-row">
           <EyeIcon className="h-4 w-4 hover:text-white cursor-pointer" />
           <span className="text-xs ml-2">125,908 views</span>

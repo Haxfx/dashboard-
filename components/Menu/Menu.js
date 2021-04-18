@@ -16,7 +16,7 @@ import {
 import { MenuItem } from "./MenuItem";
 
 export const Menu = () => {
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(true);
 
   return (
     <>
