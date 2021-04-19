@@ -88,14 +88,13 @@ const options = {
       const title = monthFormatter[x];
       const items = points.map(
         (point) =>
-          `<div className="tooltip">
+          `<div className="bg-transparent">
         <h2 className="text-m text-purple-primary">${point.x}</h2>
-        <span>Reward (${point.y})</span>
+        <span className="text-m">Reward (${point.y})</span>
       </div>`
       );
 
-      return `<div class="dgo-tooltip">
-          
+      return `<div className="p-10">
           ${items.join("")}
         </div>`;
     },
