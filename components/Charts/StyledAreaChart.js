@@ -11,9 +11,9 @@ import { format, parseISO } from "date-fns";
 
 import { data } from "../../fixtures/cryptoData";
 
-export default function Chart() {
+export default function StyledAreaChart() {
   return (
-    <div style={{ width: "100%", height: 200 }}>
+    <div className="h-48">
       <ResponsiveContainer>
         <AreaChart data={data}>
           <defs>

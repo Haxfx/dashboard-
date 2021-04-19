@@ -10,7 +10,8 @@ import { Basic } from "../Basic/Basic";
 import { Chat } from "../Chat/Chat";
 import { Projects } from "../Projects/Projects";
 import { Socials } from "../Socials/Socials";
-import Chart from "../Charts/Chart";
+import StyledAreaChart from "../Charts/StyledAreaChart";
+import { StyledBarChart } from "../Charts/StyledBarChart";
 
 export const Cards = () => {
   return (
@@ -44,9 +45,13 @@ export const Cards = () => {
       >
         <Chat />
       </Card>
-      <Card rows="2" cols="4" title="Market">
+      {/*<Card rows="2" cols="4" title="Market">
         <div className="mb-8">Current Price: $1.24</div>
-        <Chart />
+        <StyledAreaChart />
+      </Card>*/}
+      <Card rows="2" cols="4" title="Rewards">
+        <div className="mb-8">Current Epoch: 260</div>
+        <StyledBarChart />
       </Card>
       <Card title="Popular Projects" rows="3" cols="2">
         <Projects />

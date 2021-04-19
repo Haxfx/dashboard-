@@ -1,9 +1,13 @@
-import Chart from "../../components/Charts/Chart";
+import StyledAreaChart from "../../components/Charts/StyledAreaChart";
+import { StyledBarChart } from "../../components/Charts/StyledBarChart";
+import { StyledComparisonChart } from "../../components/Charts/StyledComparisonChart";
 
 export default function Index() {
   return (
     <>
-      <Chart />
+      <StyledAreaChart />
+      <StyledBarChart />
+      <StyledComparisonChart />
     </>
   );
 }
