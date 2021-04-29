@@ -1,10 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const colors = require("tailwindcss/colors");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
+  darkMode: false, // or 'media' or 'class'
   purge: {
     enabled: false,
     content: [
@@ -15,17 +17,44 @@ module.exports = {
     ],
   },
   variants: {
+    empty: ["before", "after"],
     extend: {
-      display: ["group-hover"],
+      //display: ["group-hover"],
+      //border: ["after", "before"],
+      //content: ["after", "before"],
+      //position: ["after", "before"],
+      //width: ["after", "before"],
+      //height: ["after", "before"],
+      //left: ["after", "before"],
+      //top: ["after", "before"],
+      //boxSizing: ["after", "before"],
+      //borderRadius: ["after", "before"],
+      //border: ["after", "before"],
+      rotate: ["after", "before"],
+      transform: ["after", "before"],
     },
   },
   theme: {
+    pseudo: {
+      // defaults to {'before': 'before', 'after': 'after'}
+      before: "before",
+      after: "after",
+      "not-first": "not(:first-child)",
+    },
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],
       AvenirNextCyrRegular: ["AvenirNextCyr", "Arial", "sans-serif"],
       Oswald: ["Oswald"],
     },
     extend: {
+      keyframes: {
+        reverse: {
+          to: { transform: "rotate(360deg)" },
+        },
+        spin: {
+          to: { transform: "rotate(-360deg)" },
+        },
+      },
       colors: {
         white: "#ffffff",
         blue: {
@@ -52,7 +81,7 @@ module.exports = {
           primary: "#dbdbdb",
         },
         red: {
-          primary: "#ea5f5f ",
+          primary: "#ea5f5f",
         },
       },
       gridTemplateColumns: {
@@ -113,8 +142,68 @@ module.exports = {
         100: "28rem",
         104: "30rem",
       },
+      borderRadius: {
+        half: "50%",
+      },
+      animation: {
+        "custom-spin": "a1 2s linear infinite",
+        "reverse-spin": "a2 2s linear infinite",
+      },
     },
   },
-  variants: {},
-  plugins: [],
+  plugins: [
+    require("tailwindcss-pseudo-elements"),
+    plugin(({ addUtilities }) => {
+      const newUtilities = {
+        ".edge1": {
+          content: "''",
+          width: "120px",
+          height: "120px",
+          position: "absolute",
+          left: "0",
+          top: "-12px",
+          "box-sizing": "border-box",
+          "border-radius": "50%",
+          "border-top": "12px solid #6c5ecf",
+          transform: "rotate(120deg)",
+        },
+        ".edge2": {
+          content: "''",
+          width: "120px",
+          height: "120px",
+          position: "absolute",
+          left: "0",
+          top: "-12px",
+          "box-sizing": "border-box",
+          "border-radius": "50%",
+          "border-top": "12px solid #08a0f7",
+          transform: "rotate(240deg)",
+        },
+        ".edge3": {
+          content: "''",
+          width: "120px",
+          height: "120px",
+          "box-sizing": "border-box",
+          "border-radius": "50%",
+          "border-top": "12px solid #353340;",
+        },
+        ".loading": {
+          position: "absolute",
+          display: "flex",
+          "justify-content": "center",
+          "align-items": "center",
+          width: "120px",
+          height: "120px",
+          top: "-12px",
+          color: "#fff",
+          "text-align": "center",
+          "line-height": "200px",
+          animation: "a2 2s linear infinite",
+        },
+      };
+      addUtilities(newUtilities, {
+        variants: ["before", "after"],
+      });
+    }),
+  ],
 };

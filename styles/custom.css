@@ -16,3 +16,15 @@ body {
 .highcharts-credits {
   display: none;
 }
+
+@keyframes a1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
