@@ -3,62 +3,7 @@ import React from "react";
 
 import { Message } from "./Message";
 
-const messagesFixture = [
-  {
-    id: 9,
-    user: "Ben Bassie",
-    message: "En een lul met je kut coins",
-    img: "agnes",
-  },
-  {
-    id: 8,
-    user: "Hans Dorst",
-    message: "Ik ook want ik ben Hans.",
-    img: "rembrand",
-  },
-  {
-    id: 7,
-    user: "Frits Bom",
-    message: "Easy mili, heb geld zat nu.",
-    img: "madre",
-  },
-  {
-    id: 6,
-    user: "Ben Bassie",
-    message: "Gvd allemaal IKOS",
-    img: "agnes",
-  },
-  {
-    id: 5,
-    user: "Frits Bom",
-    message: "Doge, Ripple, Verge en Neurotoken, u?",
-    img: "madre",
-  },
-  {
-    id: 4,
-    user: "Hans Dorst",
-    message: "Goed goed, welke munten heb jij?",
-    img: "rembrand",
-  },
-  {
-    id: 3,
-    user: "Frits Bom",
-    message: "Hoe gaat het hier?",
-    img: "madre",
-  },
-  {
-    id: 2,
-    user: "Frits Bom",
-    message: "Dit is een verhaaltje met een heleboel tekst",
-    img: "madre",
-  },
-  {
-    id: 1,
-    user: "Ben Bassie",
-    message: "Ik ben een eetzak en heb net een zak chips op gegeten.",
-    img: "agnes",
-  },
-];
+import messagesFixture from "./../../fixtures/chatMessages.json";
 
 export const Chat = () => {
   return (

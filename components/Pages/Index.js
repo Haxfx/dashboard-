@@ -45,14 +45,14 @@ export const Cards = () => {
       >
         <Chat />
       </Card>
-      {/*<Card rows="2" cols="4" title="Market">
-        <div className="mb-8">Current Price: $1.24</div>
+      <Card rows="2" cols="4" title="Market">
+        <div className="mb-8">Current Price: $2.12</div>
         <StyledAreaChart />
-      </Card>*/}
-      <Card rows="2" cols="4" title="Rewards">
+      </Card>
+      {/*<Card rows="2" cols="4" title="Rewards">
         <div className="mb-8">Current Epoch: 260</div>
         <StyledBarChart />
-      </Card>
+      </Card>*/}
       <Card title="Popular Projects" rows="3" cols="2">
         <Projects />
       </Card>
