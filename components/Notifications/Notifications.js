@@ -20,12 +20,9 @@ export const Notifications = () => {
           </div>
         </div>
         <div className="flex content-around justify-around flex-col ml-3 cursor-pointer">
-          <span className="text-sm justify-self-start self-start">
-            <Truncate lineCount={2} moreText={``} lessText={``}>
-              Madre{" "}
-              <span className="font-light">
-                left some comments on how to ride your stakeboard safely
-              </span>
+          <span className="flex text-sm justify-self-start self-start">
+            <Truncate lineCount={2} moreText={``} className="font-light">
+              Madre left some comments on how to ride your stakeboard safely
             </Truncate>
           </span>
           <span className="text-xs text-purple-light">

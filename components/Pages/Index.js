@@ -46,7 +46,7 @@ export const Cards = () => {
         <Chat />
       </Card>
       {/*<Card rows="2" cols="4" title="Market">
-        <div className="mb-8">Current Price: $1.24</div>
+        <div className="mb-8">Current Price: $2.12</div>
         <StyledAreaChart />
       </Card>*/}
       <Card rows="2" cols="4" title="Rewards">
@@ -58,7 +58,7 @@ export const Cards = () => {
       </Card>
       <Card rows="2" cols="4" inline>
         <Basic
-          title="We have a surprise for you"
+          title="Easy1 is introducing gamified staking"
           thumbnail="lelie"
           byUser="Billybob Toin Toin"
           userImg="agnes"
@@ -88,7 +88,7 @@ export const Cards = () => {
       <Card title="Socials" rows="1" cols="2">
         <Socials />
       </Card>
-      <Card cols="9" title="Voetje" variant="last"></Card>
+      {/*<Card cols="9" title="Voetje" variant="last"></Card>*/}
     </div>
   );
 };

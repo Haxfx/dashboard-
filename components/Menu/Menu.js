@@ -4,7 +4,8 @@ import {
   HomeIcon,
   ChevronDoubleRightIcon,
   PlayIcon,
-  VideoCameraIcon,
+  CubeIcon,
+  CalendarIcon,
   BookmarkIcon,
   FireIcon,
   LibraryIcon,
@@ -48,10 +49,10 @@ export const Menu = () => {
             <span className="text-purple-medium font-bold uppercase">Menu</span>
           </p>
           <MenuItem iconComponent={HomeIcon} title="Discover" active />
-          <MenuItem iconComponent={ChevronDoubleRightIcon} title="Trending" />
-          <MenuItem iconComponent={VideoCameraIcon} title="Streaming" />
-          <MenuItem iconComponent={PlayIcon} title="Playlist" />
-          <MenuItem iconComponent={BookmarkIcon} title="Bookmark" />
+          <MenuItem iconComponent={ChevronDoubleRightIcon} title="Stakepools" />
+          <MenuItem iconComponent={CalendarIcon} title="Calendar" />
+          <MenuItem iconComponent={CubeIcon} title="Projects" />
+          <MenuItem iconComponent={BookmarkIcon} title="Bookmarks" />
         </div>
 
         {/*Category*/}
@@ -61,7 +62,7 @@ export const Menu = () => {
               Category
             </span>
           </p>
-          <MenuItem iconComponent={HomeIcon} title="Live Stream" />
+          <MenuItem iconComponent={HomeIcon} title="Staking" />
           <MenuItem iconComponent={LibraryIcon} title="Education" />
           <MenuItem iconComponent={FireIcon} title="Competition" />
           <MenuItem iconComponent={AnnotationIcon} title="Community" />

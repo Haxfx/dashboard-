@@ -29,7 +29,7 @@ export const Tutorial = () => {
         </span>
       </div>
       <span className="px-6 pt-4 text-white text-m cursor-pointer">
-        Basic how to setup your stakeboard comfortly and Basic Equipment
+        Basics how to setup your stakepool comfortly with basic Equipment
       </span>
       <div className="flex flex-row p-6 justify-start content-start text-purple-light">
         <div className="flex flex-row">
