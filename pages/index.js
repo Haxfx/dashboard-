@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { Cards } from "../components/Pages/Index";
 import { Menu } from "../components/Menu/Menu";
+import Head from "next/head";
 
 // Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99];
@@ -36,22 +37,44 @@ const stagger = {
 };
 
 const Index = (props) => (
-  <div className="max-w-screen-2xl m-auto">
-    <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4">
-        <motion.div
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          className="title"
-        >
-          <Menu />
-        </motion.div>
-        <motion.div variants={fadeInUp} className="cards">
-          <Cards />
-        </motion.div>
-      </div>
-    </motion.div>
-  </div>
+  <>
+    <Head>
+      <title>Stakeboard | Discovery</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="twitter:card"
+        content="Stakeboard connects delegators with SPO's in a trusted way"
+      />
+      <meta name="twitter:site" content="@stakeboard" />
+      <meta name="twitter:creator" content="@stakeboard" />
+      <meta property="og:url" content="../public/stakeboard-logo.png" />
+      <meta
+        property="og:title"
+        content="Stakeboard connects delegators with SPO's"
+      />
+      <meta
+        property="og:description"
+        content="Stakeboard is the go-to trusted platform for SPOs and delegators to connect, stake, communicate, research, educate and collaborate on Cardano."
+      />
+      <meta property="og:image" content="../public/stakeboard-logo.png" />
+    </Head>
+    <div className="max-w-screen-2xl m-auto">
+      <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4">
+          <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            className="title"
+          >
+            <Menu />
+          </motion.div>
+          <motion.div variants={fadeInUp} className="cards">
+            <Cards />
+          </motion.div>
+        </div>
+      </motion.div>
+    </div>
+  </>
 );
 
 //Index.getInitialProps = async function () {
