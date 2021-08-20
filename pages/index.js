@@ -50,10 +50,13 @@ const Index = (props) => (
         name="twitter:description"
         content="Stakeboard is the go-to trusted platform for SPOs and delegators to connect, stake, communicate, research, educate and collaborate on Cardano."
       />
-      <meta name="twitter:image" content="../public/stakeboard-logo.png" />
+      <meta
+        name="twitter:image"
+        content="https://github.com/Haxfx/dashboard-/blob/main/public/stakeboard-logo.png?raw=true"
+      />
       <meta name="twitter:site" content="@stakeboard" />
       <meta name="twitter:creator" content="@stakeboard" />
-      <meta property="og:url" content="../public/stakeboard-logo.png" />
+      <meta property="og:url" content="https://beta.stakeboard.net" />
       <meta
         property="og:title"
         content="Stakeboard connects delegators with SPO's"
@@ -62,7 +65,10 @@ const Index = (props) => (
         property="og:description"
         content="Stakeboard is the go-to trusted platform for SPOs and delegators to connect, stake, communicate, research, educate and collaborate on Cardano."
       />
-      <meta property="og:image" content="../public/stakeboard-logo.png" />
+      <meta
+        property="og:image"
+        content="https://github.com/Haxfx/dashboard-/blob/main/public/stakeboard-logo.png?raw=true"
+      />
     </Head>
     <div className="max-w-screen-2xl m-auto">
       <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
