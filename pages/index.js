@@ -56,8 +56,7 @@ const Index = (props) => (
         name="twitter:description"
         content="Stakeboard is the go-to trusted platform for SPOs and delegators to connect, stake, communicate, research, educate and collaborate on Cardano."
       />
-
-      <meta property="og:url" content="https://beta.stakeboard.net" />
+      <meta property="og:type" content="website"></meta>
       <meta
         property="og:title"
         content="Stakeboard connects delegators with SPO's"
@@ -70,6 +69,7 @@ const Index = (props) => (
         property="og:image"
         content="https://beta.stakeboard.net/stakeboard-logo.png"
       />
+      <meta property="og:url" content="https://beta.stakeboard.net" />
     </Head>
     <div className="max-w-screen-2xl m-auto">
       <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
