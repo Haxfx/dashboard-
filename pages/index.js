@@ -42,6 +42,15 @@ const Index = (props) => (
       <title>Stakeboard | Discovery</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="twitter:card" content="app" />
+      <meta
+        name="twitter:text:title"
+        content="Stakeboard connects delegators with SPO's"
+      />
+      <meta
+        name="twitter:text:description"
+        content="Stakeboard is the go-to trusted platform for SPOs and delegators to connect, stake, communicate, research, educate and collaborate on Cardano."
+      />
+      <meta name="twitter:image" content="../public/stakeboard-logo.png" />
       <meta name="twitter:site" content="@stakeboard" />
       <meta name="twitter:creator" content="@stakeboard" />
       <meta property="og:url" content="../public/stakeboard-logo.png" />
