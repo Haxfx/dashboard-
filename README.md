@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Stakeboard
 
-## Getting Started
+Stakeboard is a distributed application built by and for stakepool operators and delegators to connect one to another and discover the world behind the projects in the Cardano Ecosystem.
 
-First, run the development server:
+Stakeboard give you insight about stakepools which are running on the Cardano ecosystem and in the future more various dPos blockchains, contributions done within the ecosystem and investment opportunities into new upcoming projects launching within a fast paced innovative space.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+No need to research stakepool operators or initial Stakepool offerings as Stakeboard has it all covered. We bring you the latest news regarding stakepools as operators can directly communicate and update their profiles and details on the platform as well as publish articles, link videos and share knowledge regarding the Cardano ecosystem.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To answer why Stakeboard is an important platform for this space we have a couple of questions listed below.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Try it out
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Stakeboard is currently in beta and still being worked on, it is available to check on [stakeboard.net](https://beta.stakeboard.net) for more insights.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Proposal
 
-## Learn More
+Check out our [proposal](https://cardano.ideascale.com/a/dtd/Connecting-delegators-to-SPOs/367353-48088) for more details.
 
-To learn more about Next.js, take a look at the following resources:
+# Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ongoing
+- Proof of Concept
+- Proposal
+- CICD & infrastructure
+- Concept design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Month 1- 
+- Stakepool overview
+- Stakepool operator stakeboard pool creation board
+- Stakepool Operator stakepool claim
+- Stakepool view with enhanced information
 
-## Deploy on Vercel
+Month 2
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Implement feedback from users
+- Enhanced filtering on stakepools
+- Onboard stakepool operators and delegators to test the mvp.
+- Dashboard Discover Overview
+- Notification Center
+- Automatic (changes made by SPOs to pledge, fee, etc.)
+- Manual (communication tool for SPO to delegators)
+- User settings
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Month 3
+
+- Wallet integration: stake directly on StakeBoard (partnership with external wallet) .
+- Related Videos ( Youtube reference )
+- Stakepool of the day (Randomized )
+- Relevant Articles (Medium reference )
+- Educational Portal 
+- Bonus: Cardano Calendar
