@@ -52,7 +52,7 @@ const Index = (props) => (
       />
       <meta
         name="twitter:image"
-        content="https://github.com/Haxfx/dashboard-/blob/main/public/stakeboard-logo.png?raw=true"
+        content="https://beta.stakeboard.net/stakeboard-logo.png"
       />
       <meta name="twitter:site" content="@stakeboard" />
       <meta name="twitter:creator" content="@stakeboard" />
@@ -67,7 +67,7 @@ const Index = (props) => (
       />
       <meta
         property="og:image"
-        content="https://github.com/Haxfx/dashboard-/blob/main/public/stakeboard-logo.png?raw=true"
+        content="https://beta.stakeboard.net/stakeboard-logo.png"
       />
     </Head>
     <div className="max-w-screen-2xl m-auto">
