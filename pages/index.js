@@ -43,7 +43,7 @@ const Index = (props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="twitter:card" content="app" />
       <meta
-        name="twitter:title"
+        name="twitter:text:title"
         content="Stakeboard connects delegators with SPO's"
       />
       <meta
